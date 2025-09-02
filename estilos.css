@@ -539,12 +539,13 @@ footer {
 }
 
 .footer-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 4rem;
+  display: flex;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  gap: 4rem;
+  flex-wrap: nowrap; /* para que no se rompa */
 }
 
 .footer-about h3 {
