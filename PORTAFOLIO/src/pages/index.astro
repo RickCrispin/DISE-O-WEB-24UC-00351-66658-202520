@@ -1,0 +1,106 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- ================= HEADER Y NAVEGACIÓN ================= -->
+  <header id="header" class="bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light container">
+      <!-- Logo y nombre -->
+      <div class="logo d-flex align-items-center">
+        <span class="logo-circle me-2"></span>
+        <span>Rick Crispin</span>
+      </div>
+      <!-- Botón hamburguesa para móvil -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav-menu navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="habilidades.html">Habilidades</a></li>
+          <!-- Dropdown con enlaces adicionales -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Más
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="https://drive.usercontent.google.com/u/0/uc?id=120MipHESzPXdFPXLg7t6OH88NJkgwDEm&export=download">Experiencia Profesional</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/rick-crispin-bendezu-92a820260">Perfil Profesional</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= SECCIÓN INICIO / HERO ================= -->
+  <section id="inicio" class="mostrar py-5 text-center bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Presentación -->
+        <div class="col-md-6">
+          <h1 class="hero-title typewriter">
+            <span id="typewriter-text">Rick Crispin</span>
+          </h1>
+          <p class="hero-subtitle animated-fadein">Desarrollador web y futuro ingeniero de sistemas con pasión por crear soluciones digitales creativas e innovadoras.</p>
+          <div class="hero-btns d-flex justify-content-center gap-3">
+            <a href="proyectos.html" class="btn btn-primary">Ver mis proyectos</a>
+            <a href="contacto.html" class="btn btn-outline-primary">Contáctame</a>
+          </div>
+        </div>
+        <!-- Imagen de perfil -->
+        <div class="col-md-6">
+          <img src="/img/perfil.png" alt="Rick Crispin programando" class="hero-image img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content container">
+      <div class="row footer-row">
+        <!-- Sobre el autor -->
+        <div class="footer-about col-md-4">
+          <h3>Rick Crispin</h3>
+          <p>Desarrollador web y futuro ingeniero de sistemas apasionado por crear soluciones digitales innovadoras y funcionales.</p>
+          <div class="footer-social d-flex gap-3">
+            <a href="https://github.com/" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rick-crispin-bendezu-92a820260" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/Luminugh" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/rickcrispin/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100080989100456" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <!-- Enlaces rápidos -->
+        <div class="footer-links col-md-4">
+          <h3>Enlaces rápidos</h3>
+          <ul class="list-unstyled">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre mí</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <!-- Recursos -->
+        <div class="footer-links col-md-4">
+          <h3>Recursos</h3>
+          <ul class="list-unstyled">
+            <li><a href="https://drive.usercontent.google.com/u/0/uc?id=120MipHESzPXdFPXLg7t6OH88NJkgwDEm&export=download">Descargar CV</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Tutoriales</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</Layout>
